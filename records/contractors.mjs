@@ -49,7 +49,6 @@ export const addContractor = async (contractor) => {
 
   export const editContracotrs = async (contractos) => {
     contractos.map(async (contractor) => {
-      console.log(contractor);
       await pool.query("UPDATE `contractors` SET `nip`=?, `regon`=?, `name`=?, `if_vat`=?, `street`=?, `house`=?, `apartment`=? WHERE id = ?", [
         contractor.nip,
         contractor.regon,

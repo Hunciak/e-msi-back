@@ -37,7 +37,6 @@ export const contractorsRouter = Router()
     })
     .post('/edit', async (req, res) => {
         try {
-            console.log(req.body);
             await editContracotrs(req.body);
             res.sendStatus(200)
         } catch {
