@@ -7,7 +7,7 @@ import contractorsRouter from './routers/contractors.router.mjs';
 app.use(express.json());
 
 app.use(cors({
-    origin: 'http://localhost:3000',
+    origin: 'http://141.95.67.150:3000',
     credentials: true,
 }));
 
